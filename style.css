@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --black: darkviolet;
+    --white: #fff;
+    --gradient: linear-gradient(darkviolet, deeppink);
+    --bg: rgba(255, 255, 255, .1);
+    --box-shadow: #800044 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --border: 1rem solid linear-gradient(darkviolet, deeppink);
+}
+*{
+    /* font-family: 'Poppins', sans-serif; */
+    font-family:'Merienda', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+   
+   
+}
+body{
+    background: #000;
+}
+html{
+    font-size: 62.5;
+    
+}
+.logo{
+    margin: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+.name{
+    color: darkviolet;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px deeppink;
+    
+   
+}
+.Text{
+    background: #000;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Text h2{
+    color: deeppink;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 35px;
+    text-align: center;
+    font-family:'Merienda', cursive;
+}
+
+.Text .work{
+    color: darkviolet;
+    padding: 10px;
+    position: absolute;
+    top: 30%;
+    left: 44%;
+    z-index: 1;
+    font-size: 35px;  
+}
+
+/* Chapter 5 */
+
+.Text .heading5{
+    color: darkviolet;
+    text-decoration: underline;
+    border-radius: 10%;
+    padding: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    font-size: 50px;
+}
+
+.practice5{
+    color: darkviolet;
+    text-decoration: underline;
+    padding: 7px;
+    position: absolute;
+    top: 55%;
+    left: 1%;
+    z-index: 1;
+    font-size: 30px;
+}
+.Text .exercise5{
+    margin-top: 20px;
+    display: flex;
+    position: absolute;
+    top: 60%;
+    
+}
+
+.Text .exerone5{
+    color: darkviolet;
+    padding: 10px;
+    z-index: 1;
+    font-size: 23px;
+    text-decoration: none;
+    border: 1px solid deeppink;
+    margin: 5px;
+}
+
+.Text .Code5{
+    color: rgb(52, 4, 72);
+    background: var(--gradient);
+    border-radius: 15%;
+    padding: 5px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    z-index: 1;
+    font-size: 30px;
+}
+
+.box ul li{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    list-style: none;
+    opacity: 0;
+    background: var(--gradient);
+    bottom: 0;
+    left: 10vw;
+    animation: animate 15s linear infinite;
+}
+
+
+
+.box ul li:nth-child(2){
+    left: 36vw;
+    animation-delay: 2s;
+}
+.box ul li:nth-child(3){
+    left: 22vw;
+    animation-delay: 4s;
+}
+.box ul li:nth-child(4){
+    left: 56vw;
+    animation-delay: 6s;
+}
+.box ul li:nth-child(5){
+    left: 76vw;
+    animation-delay: 4s;
+}
+
+@keyframes animate {
+    0%{
+        transform: scale(0) rotate(0);
+        opacity: 1;
+        bottom: 0;
+    }
+    100%{
+        transform: scale(5) rotate(360deg);
+        opacity: 1;
+        bottom: 100%;
+    }
+}
+
+
+
+.Text .project_container5{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    z-index: 1;
+    position: absolute;
+    top: 90%;
+    left: 37%;
+   
+}
+.Text .card{
+    width: 20em;
+    height: 20em;
+    position: relative;
+    margin: 0 1em;
+    background: url(./images/Table.png);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    box-shadow: #000 0px 11px 15px 0px;
+    margin-bottom: 10px;
+}
+.Text .card .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(250, 168, 182, 0.179);
+    opacity: 0;
+    transition: 0.3s;
+    
+}
+
+.Text .card:hover .overlay{
+    opacity: 1;
+}
+
+.Text .card .bx{
+    padding: 0.6em 1.3em;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    letter-spacing: 1px;
+    border-radius: 8px;
+}
+
+.Text .card .bx:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.Text .card .pro_head{
+    transition: 0.3s;
+    transform: translateY(-20px);
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.Text .card .bx{
+    transition: 0.3s;
+    transform: translateY(-20px);
+    color: #fff;
+}
+
+.Text .card:hover .bx, .card:hover .pro_head{
+    transform: translateY(0);
+}
+
+/* Chapter 6 */
+
+.Text .heading6{
+    color: darkviolet;
+    text-decoration: underline;
+    border-radius: 10%;
+    padding: 7px;
+    position: absolute;
+    top: 145%;
+    left: 50%;
+    z-index: 1;
+    font-size: 50px;
+}
+
+.practice6{
+    color: darkviolet;
+    text-decoration: underline;
+    padding: 7px;
+    position: absolute;
+    top: 150%;
+    left: 1%;
+    z-index: 1;
+    font-size: 30px;
+}
+.Text .exercise6{
+    margin-top: 20px;
+    display: flex;
+    position: absolute;
+    top: 157%;
+    
+}
+
+.Text .exerone6{
+    color: darkviolet;
+    padding: 10px;
+    z-index: 1;
+    font-size: 23px;
+    text-decoration: none;
+    border: 1px solid deeppink;
+    margin: 5px;
+}
+
+.Text .Code6{
+    color: rgb(52, 4, 72);
+    background: var(--gradient);
+    border-radius: 15%;
+    padding: 5px;
+    position: absolute;
+    top: 175%;
+    left: 50%;
+    z-index: 1;
+    font-size: 30px;
+}
+.Text .project_container6{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    z-index: 1;
+    position: absolute;
+    top: 180%;
+    left: 37%;
+   
+}
+.Text .card6{
+    width: 20em;
+    height: 40em;
+    position: relative;
+    margin: 0 1em;
+    background: url(./images/recursive.png);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    box-shadow: #000 0px 11px 15px 0px;
+    margin-bottom: 10px;
+}
+.Text .card6 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(250, 168, 182, 0.179);
+    opacity: 0;
+    transition: 0.3s;
+    
+}
+
+.Text .card6:hover .overlay{
+    opacity: 1;
+}
+
+.Text .card6 .bx{
+    padding: 0.6em 1.3em;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    letter-spacing: 1px;
+    border-radius: 8px;
+}
+
+.Text .card6 .bx:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.Text .card6 .pro_head{
+    transition: 0.3s;
+    transform: translateY(-20px);
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.Text .card6 .bx{
+    transition: 0.3s;
+    transform: translateY(-20px);
+    color: #fff;
+}
+
+.Text .card6:hover .bx, .card6:hover .pro_head{
+    transform: translateY(0);
+}
